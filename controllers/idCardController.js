@@ -31,7 +31,6 @@ exports.createIdCard = async (req, res) => {
     res.status(500).json({ message: 'Server error', error: error.message });
   }
 };
-
 // Get all ID Cards of logged-in user
 exports.getAllIdCards = async (req, res) => {
   try {
@@ -49,8 +48,6 @@ exports.getAllIdCards = async (req, res) => {
     res.status(500).json({ message: 'Server error', error: error.message });
   }
 };
-
-
 // Get single ID Card by ID
 exports.getIdCardById = async (req, res) => {
   try {
@@ -81,7 +78,6 @@ exports.updateIdCard = async (req, res) => {
     res.status(500).json({ message: 'Server error', error: error.message });
   }
 };
-
 // Delete ID Card
 exports.deleteIdCard = async (req, res) => {
   try {
@@ -186,8 +182,6 @@ exports.generateAllPDFs = async (req, res) => {
     res.status(500).json({ message: 'Server error', error: error.message });
   }
 };
-
-
 
 exports.bulkUploadFromExcel = async (req, res) => {
   try {
